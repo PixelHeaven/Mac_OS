@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac OS Sequoia 15 Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="mac-os">
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div class="left-menu">
+                <div class="apple-logo"><i class="fab fa-apple"></i></div>
+                <div class="menu-item active">Finder</div>
+                <div class="menu-item">File</div>
+                <div class="menu-item">Edit</div>
+                <div class="menu-item">View</div>
+                <div class="menu-item">Go</div>
+                <div class="menu-item">Window</div>
+                <div class="menu-item">Help</div>
+            </div>
+            <div class="right-menu">
+                <div class="menu-icon"><i class="fas fa-wifi"></i></div>
+                <div class="menu-icon"><i class="fas fa-battery-three-quarters"></i></div>
+                <div class="menu-icon"><i class="far fa-clock"></i> <span id="current-time">10:30 AM</span></div>
+                <div class="menu-icon"><i class="fas fa-search"></i></div>
+                <div class="menu-icon"><i class="fas fa-cog"></i></div>
+            </div>
+        </div>
+
+        <!-- Desktop -->
+        <div class="desktop">
+            <!-- Desktop Icons -->
+            <div class="desktop-icon" id="finder">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Finder_Icon_macOS_Big_Sur.png/600px-Finder_Icon_macOS_Big_Sur.png" alt="Finder">
+                <span>Finder</span>
+            </div>
+            <div class="desktop-icon" id="trash">
+                <img src="https://help.apple.com/assets/6171BD2B4C1FAE5DFF7C3E89/6171BD2C4C1FAE5DFF7C3E90/en_US/7ed8a31f1f95b4e0e9507e690e3eed8b.png" alt="Trash">
+                <span>Trash</span>
+            </div>
+        </div>
+
+        <!-- Dock -->
+        <div class="dock">
+            <div class="dock-item" id="finder-dock">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Finder_Icon_macOS_Big_Sur.png/600px-Finder_Icon_macOS_Big_Sur.png" alt="Finder">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Safari_browser_logo.svg/1024px-Safari_browser_logo.svg.png" alt="Safari">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mail_App_macOS_Big_Sur_Icon.png/600px-Mail_App_macOS_Big_Sur_Icon.png" alt="Mail">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Apple_Maps_icon.svg/1200px-Apple_Maps_icon.svg.png" alt="Maps">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_Music_Icon.svg/1200px-Apple_Music_Icon.svg.png" alt="Music">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Apple_Photos_icon.svg/1200px-Apple_Photos_icon.svg.png" alt="Photos">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/App_Store_%28iOS%29.png/1200px-App_Store_%28iOS%29.png" alt="App Store">
+            </div>
+            <div class="dock-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Finder_Icon_macOS_Big_Sur.png/600px-Finder_Icon_macOS_Big_Sur.png" alt="System Preferences">
+            </div>
+            <div class="dock-divider"></div>
+            <div class="dock-item">
+                <img src="https://help.apple.com/assets/6171BD2B4C1FAE5DFF7C3E89/6171BD2C4C1FAE5DFF7C3E90/en_US/7ed8a31f1f95b4e0e9507e690e3eed8b.png" alt="Trash">
+            </div>
+        </div>
+
+        <!-- Finder Window (Hidden by default) -->
+        <div class="window" id="finder-window">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <div class="window-button close"></div>
+                    <div class="window-button minimize"></div>
+                    <div class="window-button maximize"></div>
+                </div>
+                <div class="window-title">Finder</div>
+            </div>
+            <div class="window-sidebar">
+                <div class="sidebar-item"><i class="fas fa-home"></i> Home</div>
+                <div class="sidebar-item"><i class="fas fa-desktop"></i> Desktop</div>
+                <div class="sidebar-item"><i class="fas fa-download"></i> Downloads</div>
+                <div class="sidebar-item"><i class="fas fa-file"></i> Documents</div>
+                <div class="sidebar-item"><i class="fas fa-image"></i> Pictures</div>
+            </div>
+            <div class="window-content">
+                <div class="folder-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Applications</span>
+                </div>
+                <div class="folder-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Documents</span>
+                </div>
+                <div class="folder-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Downloads</span>
+                </div>
+                <div class="folder-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Pictures</span>
+                </div>
+                <div class="folder-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Music</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
